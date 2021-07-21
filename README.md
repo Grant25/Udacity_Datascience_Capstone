@@ -47,6 +47,6 @@ The main findings however, can be found at the following Medium post.
 **Licensing, Authors, Acknowledgements**
 Data was provided by Starbucks as part of the Udacity Data Science Nanodegree capstone project. Thanks for an interesting project.
 
-Seaborn’s Histplot would not run within the Udacity classroom, Stackoverflow suggested using pip3 to install the package then restart the Kernel. Thanks to the author at the Stackoverflow link that provided this solution[https://stackoverflow.com/questions/64815227/attributeerror-module-seaborn-has-no-attribute-histplot?rq=1].
+Seaborn’s Histplot would not run within the Udacity classroom, Stackoverflow suggested using pip3 to install the package then restart the Kernel. Thanks to the author at the Stackoverflow link that provided this [solution](https://stackoverflow.com/questions/64815227/attributeerror-module-seaborn-has-no-attribute-histplot?rq=1).
 
-Additionally, the code to create the feature importance chart was provided from a post at Stackoverflow, and amended so that it could be incorporated into this project. Thanks to the author that provided this solution.
+Additionally, the code to create the feature importance chart was provided from a post at Stackoverflow, and amended so that it could be incorporated into this project. Thanks to the author that provided this [solution](https://stackoverflow.com/questions/44101458/random-forest-feature-importance-chart-using-python).
