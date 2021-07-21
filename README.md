@@ -7,10 +7,10 @@
 4.	Results
 5.	Licensing, Authors, and Acknowledgements
 
-**Installation**
+# Installation
 Anaconda Navigator V.1.10.0 was utilised, with the code being written using Jupyter Notebook V.6.1.4. Python version 3 was used. Standard packages such as Pandas, numpy and datetime were installed. For creating charts matplotlib and seaborn were installed. Several packages from Sklearn were utilised for modelling. These included, from metrics: classification_report and confusion_matrix. From Model_selection: train_test_split and GridSearchCV as well as classifiers LogisticRegression and RandomForestClassifier.
 
-**Project Motivation**
+# Project Motivation
 
 This project is the capstone project of the Udacity Data Science Nanodegree. The aim of the project selected was to determine which demographic groups respond best to which offer type using simulation data provided by Starbucks. 
 
@@ -25,7 +25,7 @@ For this project I chose two primary questions: The first is regarding which cus
 
 In answering these questions offers could become more targeted to maximise sales with Starbucks and number of customers completing offers when they are issued.
 
-**File Descriptions**
+# File Descriptions
 There is only one notebook for this analysis, it is a self-contained notebook which will produce the output for each of the 2 stated questions. The notebook has been separated into sections.
 There were 3 datasets provided: Profile, Transcript and Portfolio. Files were provided as .json which were then imported to a Jupyter notebook. A brief description of each file is below:
 
@@ -35,7 +35,7 @@ There were 3 datasets provided: Profile, Transcript and Portfolio. Files were pr
 
 **Transcript:** There were 306,534 rows in this file representing different stages of an offer cycle as well as if a transaction was made. There were 4 columns in this dataset. The ‘event’ field captures the stages of the offer, and is made up of 4 levels (offer received, offer viewed, offer complete and transaction). The dataset also contains a field called ‘value’. The data within each cell of the frame for this field are held within a dictionary. The contents of the dictionary are either the unique id for the offer that was sent to the customer, or the amount of money that the customer transacted with Starbucks. ‘Time’, is a marker measured in hours for when an activity occurred. For every customer, time starts at 0 and each time an offer is received, viewed, completed or a transaction is made the ‘time’ variable captures the number of hours since the start that this activity occurred. A unique id, referred to as ‘person’ was within the data, this was used to join to the profile information.
 
-**Results**
+# Results
 
 In answering the question, 'Is it possible to predict if a customer will complete an offer once it is viewed?' two models were chosen. The first was an initial Baseline model using Logistic Regression, with the second being a Random Forest. An initial baseline Logistic Regression model was created which resulted in an accuracy score of 0.58, with an average F1-score of 0.58. This model also had an AUC of 0.62.
 
@@ -44,7 +44,7 @@ The Random Forest model with 150 estimators performed best, producing an accurac
 The main findings however, can be found at the following Medium post.
 
 
-**Licensing, Authors, Acknowledgements**
+# Licensing, Authors, Acknowledgements
 Data was provided by Starbucks as part of the Udacity Data Science Nanodegree capstone project. Thanks for an interesting project.
 
 Seaborn’s Histplot would not run within the Udacity classroom, Stackoverflow suggested using pip3 to install the package then restart the Kernel. Thanks to the author at the Stackoverflow link that provided this [solution](https://stackoverflow.com/questions/64815227/attributeerror-module-seaborn-has-no-attribute-histplot?rq=1).
