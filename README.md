@@ -41,6 +41,8 @@ In answering the question, 'Is it possible to predict if a customer will complet
 
 The Random Forest model with 150 estimators performed best, producing an accuracy score of 0.75 AUC of 0.83 and F1 score of 0.76. The model has a good ability to separate between classes. The model outputs also highlighted key features of importance. It was shown that 'Tenure' and 'cum_offer_amt' as being the top two features in determining whether or not a customer will complete an offer once it is viewed. From the exploratory analysis it was shown that customers that have a greater tenure tend to complete offers. Also, those that have a greater cumulative amount of spend with Starbucks prior to an offer being issued tend to complete offers once they are viewed. This suggest some aspect of brand loyalty.
 
+To evaluate the model, the function cross_val_score within Sci-kit Learn’s model_selection module was utilized, with the number of folds (k) requested being 10. It was found that the across 10 folds, there is a stable accuracy of the Random Forest model that included parameter tuning. Accuracy for each fold ranged 74.9% to 76% within the training set, with comparison to the test set having an Accuracy of 75.7%. 
+
 The main findings however, can be found at the following Medium [post](https://grant25.medium.com/starbucks-capstone-challenge-9876259e8a6e)
 
 
